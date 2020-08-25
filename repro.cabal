@@ -1,0 +1,18 @@
+cabal-version:       >=1.10
+
+name:                repro
+version:             0.1.0.0
+author:              Adam Paszke
+maintainer:          adam.paszke@gmail.com
+build-type:          Simple
+
+library
+  exposed-modules:     MyLib
+  build-depends:       base >=4.13 && <4.14,
+                       llvm-hs == 9.0.*, llvm-hs-pure == 9.0.*
+  default-language:    Haskell2010
+
+executable repro
+  main-is:             Main.hs
+  build-depends:       base, repro
+  default-language:    Haskell2010

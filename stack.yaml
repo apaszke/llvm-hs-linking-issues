@@ -1,0 +1,16 @@
+resolver: lts-16.11
+
+packages:
+- .
+
+extra-deps:
+  - llvm-hs-9.0.1
+  - llvm-hs-pure-9.0.0
+  - store-0.7.4
+  - store-core-0.4.4.2
+  - th-utilities-0.2.4.0
+
+flags:
+  llvm-hs:
+    shared-llvm: false
+
